@@ -1,50 +1,50 @@
-# Number Guessing Game (Sayı Tahmin Oyunu)
+# Number Guessing Game
 
-Bu proje, C dili ile yazılmış basit bir konsol tabanlı sayı tahmin oyunudur.
+This project is a simple console-based number guessing game written in C.
 
-## Oyun Hakkında
+## About the Game
 
-Bilgisayar 1 ile 10 arasında rastgele bir sayı tutar. Kullanıcının bu sayıyı tahmin etmek için toplam 5 hakkı vardır.
+The computer selects a random number between 1 and 10. The user has a total of 5 attempts to guess this number.
 
-### Özellikler
-- **Rastgele Sayı Üretimi:** Her oyunda 1-10 arası farklı bir sayı belirlenir.
-- **Hata Kontrolü:** Geçersiz giriş yapıldığında (örneğin harf girildiğinde) hak kaybı olmaz.
-- **Tekrar Oynama:** Oyun bittiğinde kullanıcıya tekrar oynama seçeneği sunulur.
+### Features
+- **Random Number Generation:** A different number is selected each game (1-10).
+- **Input Validation:** Invalid inputs (e.g., characters) do not consume attempts.
+- **Replayability:** Option to play again after the game ends.
 
-## Kurulum ve Derleme
+## Installation and Compilation
 
-Bu projeyi derlemek için bir C derleyicisine (örneğin GCC) ihtiyacınız vardır.
+You need a C compiler (like GCC) to compile this project.
 
-Proje dizininde terminali açın ve aşağıdaki komutu çalıştırın:
+Open a terminal in the project directory and run the following command:
 
 ```bash
 gcc week5-NumberGuessingGame.c -o numberGuessGame
 ```
 
-## Çalıştırma
+## How to Run
 
-Derleme işlemi tamamlandıktan sonra oyunu şu komutla başlatabilirsiniz:
+After compilation, you can start the game with the following command:
 
-**Windows için:**
+**For Windows:**
 ```bash
 numberGuessGame.exe
 ```
 
-**Linux/Mac için:**
+**For Linux/Mac:**
 ```bash
 ./numberGuessGame
 ```
 
-## Nasıl Oynanır?
+## How to Play
 
-1. Programı çalıştırdığınızda `Guess:` yazısını göreceksiniz.
-2. 1 ile 10 arasında bir sayı girip ENTER tuşuna basın.
-3. Eğer tahmininiz doğruysa oyunu kazanırsınız.
-4. Yanlış tahmin yaparsanız kalan haklarınız ekranda gösterilir.
-5. Tüm haklarınız biterse veya kazanırsanız, oyun size tekrar oynamak isteyip istemediğinizi sorar.
-   - Tekrar oynamak için `1` yazıp ENTER'a basın.
-   - Çıkmak için başka bir sayı girebilirsiniz.
+1. When you run the program, you will see `Guess:`.
+2. Enter a number between 1 and 10 and press ENTER.
+3. If your guess is correct, you win.
+4. If your guess is wrong, the remaining attempts will be shown.
+5. When all attempts are used or if you win, the game asks if you want to play again.
+   - Press `1` and ENTER to play again.
+   - Enter any other number to exit.
 
-## Geliştirici Notları
+## Developer Notes
 
-Bu proje ödev veya pratik amaçlı hazırlanmıştır. `srand(time(NULL))` kullanılarak her çalışma için rastgelelik sağlanmıştır.
+This project was created for educational purposes. `srand(time(NULL))` is used to ensure randomness for each run.
